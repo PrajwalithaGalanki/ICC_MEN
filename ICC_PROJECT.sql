@@ -265,7 +265,16 @@ create table played_players(
                             insert into played_players values ('2007-2-13','CAS','SA0003','74 in 59 balls','0 in 0 overs',2,12);
                             insert into played_players values ('2007-2-13','CAS','SA0002','0 in 0 balls','3 in 10 overs',3,7);
                             
-                            
+create table council_trophies(
+				council_name varchar(5) ,
+                                trophies varchar(100),
+                                under_captaincy varchar(7),
+                                foreign key (council_name) references council_info(council_name)
+				);
+                                insert into council_trophies values('BCCI', 'ICC WORLD CHAMPION-2024', 'IND0001');
+                                insert into council_trophies values('NZC', 'ICC TEST CHAMPION-2021', 'NZ0001');
+                                insert into council_trophies values('CA', 'ICC WORLD CHAMPION-2015', 'AUS0001');
+                                insert into council_trophies values('ECB', 'ICC WORLD CHAMPION-2019', 'ENG0001');
                             
 
                         
